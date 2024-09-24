@@ -104,6 +104,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: white;
 }
 .nav ul li {
     display: inline;
@@ -111,6 +112,10 @@ nav {
     margin: 10px;
     width: 100px;
     text-align: center;
+    
+}
+.nav ul li a{
+    color: white;
 }
 .search-container {
     text-align: center;
@@ -213,7 +218,9 @@ hr {
     flex: 1;
     padding: 0 10px;
 }
-
+.button :hover{
+    background-color: rgb(181, 181, 181);
+}
 .disease-column p {
     margin: 30px 0;
 }
