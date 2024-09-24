@@ -6,46 +6,41 @@
     <link rel="stylesheet" href="hp.css">
     <title>HealthPedia</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header class="sticky-header">
         <div class="logo">
-           <!-- <span class="logo-icon">+</span>
-           <h1 style="color: white;">Health</h1>
-           <h1>Pal</h1> -->
            <a href="index.html"><img src="logo.png" alt=""></a>
-       </div>
+        </div>
        
-       <nav id="nav-links">
-           <a href="index.html#newslink">News</a>
-           <a href="hp.html">Healthpedia</a>
-           <div class="dropdown">
-               <a href="index.html#services" class="dropbtn">Services</a>
-               <div class="dropdown-content">
-                   <a href="index.html#onlineconsul">Online Consultation</a>
-                   <a href="index.html#testimonialink">Testimonials</a>
-               </div>
-           </div>
-           
-           <a href="index.html#aboutuslink">About</a>
-       </nav>
-       <a href="log.html#services"
-           style="position:relative; border-radius: 10px; padding-top: 5px; padding-bottom: 5px;" type="button"
-           class="btn cta-button">Login</a>
-   </header>
+        <nav id="nav-links">
+            <a href="index.html#newslink">News</a>
+            <a href="hp.html">Healthpedia</a>
+            <div class="dropdown">
+                <a href="index.html#services" class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="index.html#onlineconsul">Online Consultation</a>
+                    <a href="index.html#testimonialink">Testimonials</a>
+                </div>
+            </div>
+            <a href="index.html#aboutuslink">About</a>
+        </nav>
+        <a href="log.html#services" style="position:relative; border-radius: 10px; padding-top: 5px; padding-bottom: 5px;" type="button" class="btn cta-button">Login</a>
+    </header>
 
     <nav class="nav">
         <ul>
-            <li>Virus</li>
-            <li>Kanker</li>
-            <li>Jantung</li>
-            <li>Otak</li>
-            <li>Psikologi</li>
-            <li>Defisiensi</li>
-            <li>Infeksi</li>
-            <li>Mata</li>
-            <li>Pencernaan</li>
-            <li>Semua Penyakit</li>
+            <li><a href="#virus">Virus</a></li>
+            <li><a href="#Kanker">Kanker</a></li>
+            <li><a href="#Jantung">Jantung</a></li>
+            <li><a href="#Otak">Otak</a></li>
+            <li><a href="#Psikologi">Psikologi</a></li>
+            <li><a href="#Defisiensi">Defisiensi</a></li>
+            <li><a href="#Infeksi">Infeksi</a></li>
+            <li><a href="#Mata">Mata</a></li>
+            <li><a href="#Pencernaan">Pencernaan</a></li>
+            <li><a href="#Semua Penyakit">Semua Penyakit</a></li>
         </ul>
     </nav>
 
@@ -56,60 +51,51 @@
 
     <div class="alphabet-search">
         <h3>Cari berdasarkan abjad</h3>
-        <div>
-            <button>A</button><button>B</button><button>C</button><button>D</button><button>E</button>
-            <button>F</button><button>G</button><button>H</button><button>I</button><button>J</button>
-            <button>K</button><button>L</button><button>M</button><button>N</button><button>O</button>
-            <button>P</button><button>Q</button><button>R</button><button>S</button><button>T</button>
-            <button>U</button><button>V</button><button>W</button><button>X</button><button>Y</button>
-            <button>Z</button>
+        <div class="button">
+            <button onclick="filterDiseases('A')">A</button>
+            <button onclick="filterDiseases('B')">B</button>
+            <button onclick="filterDiseases('C')">C</button>
+            <button onclick="filterDiseases('D')">D</button>
+            <button onclick="filterDiseases('E')">E</button>
+            <button onclick="filterDiseases('F')">F</button>
+            <button onclick="filterDiseases('G')">G</button>
+            <button onclick="filterDiseases('H')">H</button>
+            <button onclick="filterDiseases('I')">I</button>
+            <button onclick="filterDiseases('J')">J</button>
+            <button onclick="filterDiseases('K')">K</button>
+            <button onclick="filterDiseases('L')">L</button>
+            <button onclick="filterDiseases('M')">M</button>
+            <button onclick="filterDiseases('N')">N</button>
+            <button onclick="filterDiseases('O')">O</button>
+            <button onclick="filterDiseases('P')">P</button>
+            <button onclick="filterDiseases('Q')">Q</button>
+            <button onclick="filterDiseases('R')">R</button>
+            <button onclick="filterDiseases('S')">S</button>
+            <button onclick="filterDiseases('T')">T</button>
+            <button onclick="filterDiseases('U')">U</button>
+            <button onclick="filterDiseases('W')">W</button>
+            <button onclick="filterDiseases('X')">X</button>
+            <button onclick="filterDiseases('Y')">Y</button>
+            <button onclick="filterDiseases('Z')">Z</button>
         </div>
     </div>
 
     <h3 style="text-align: center;">Daftar Penyakit</h3>
-
-    <div class="disease-list">
-        <div class="disease-column">
-            <p>Abses hati</p>
-            <p>Abses peritonsil</p>
-            <p>Abses retrofaring</p>
-            <p>Acne keloidalis</p>
-        </div>
-        <div class="vertical-line"></div>
-        <div class="disease-column">
-            <p>Adenoma</p>
-            <p>Aerogen</p>
-            <p>Agranulositosis</p>
-            <p>Akitinomikosis</p>
-        </div>
-        <div class="vertical-line"></div>
-        <div class="disease-column">
-            <p>Amenorea</p>
-            <p>Aneurisma aorta</p>
-            <p>Angina pektoris</p>
-            <p>Angiosarkoma</p>
-        </div>
-        <div class="vertical-line"></div>
-        <div class="disease-column">
-            <p>Ablasi Retina</p>
-            <p>Abses</p>
-            <p>Abses Gigi</p>
-            <p>Abses Otak</p>
-        </div>
-        <div class="vertical-line"></div>
-        <div class="disease-column">
-            <p>Apnea</p>
-            <p>Asidosis</p>
-            <p>Aspergilosis</p>
-            <p>Atelektasis</p>
-        </div>
+    <div id="disease-list" class="disease-list">
+        <!-- Disease list will be dynamically populated here -->
     </div>
-
-    
 
     <div class="pagination">
-        <button>1</button><button>2</button><button>3</button><button>4</button><button>5</button>
-        <button>&gt;&gt;</button>
+        <button onclick="prevPage()">&#60;&#60;</button>
+        <button onclick="changePage(1)">1</button>
+        <button onclick="changePage(2)">2</button>
+        <button onclick="changePage(3)">3</button>
+        <button onclick="changePage(4)">4</button>
+        <button onclick="changePage(5)">5</button>
+        <button onclick="nextPage()">&#62;&#62;</button>
     </div>
+    
+
+    <script src="hp.js"></script>
 </body>
 </html>
