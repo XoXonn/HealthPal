@@ -399,48 +399,6 @@ nav {
 
 
 
-
-/* MOBILE */
-
-/* Responsive navigation */
-@media (max-width: 768px) {
-    #nav-links {
-        display: none; /* Hide on small screens */
-    }
-    
-    /* Add a hamburger menu for mobile */
-    .mobile-menu-icon {
-        display: block;
-        font-size: 24px;
-    }
-}
-
-
-/* Responsive typography */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
-    .section-title {
-        font-size: 1.5rem;
-    }
-}
-
-/* Additional responsive adjustments */
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 1.5rem;
-    }
-    
-    .cta-button {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -519,3 +477,135 @@ nav {
 }
 
 
+
+/* Existing styles remain the same */
+
+/* Add these media queries at the end of your CSS file */
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+
+    header.sticky-header {
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        width: 80%;
+    }
+
+    nav {
+        padding-right: 0;
+    }
+
+    #nav-links {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .hero {
+        padding: 40px 5%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .news-section {
+        padding: 50px 20px;
+    }
+
+    .mainright {
+        flex-direction: column;
+    }
+
+    .main {
+        flex-direction: column;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .news-item-main {
+        max-width: 100%;
+    }
+
+    .news-item-main img {
+        width: 100%;
+    }
+
+    .right {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .news-item-right {
+        max-width: 48%;
+        margin-left: 0;
+    }
+
+    .side {
+        margin-top: 20px;
+    }
+
+    .news-item-side {
+        margin-left: 0;
+    }
+
+    .news-item-side img {
+        width: 30%;
+    }
+
+    .coba1 {
+        flex-direction: column;
+    }
+
+    .text-content {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .image-content {
+        margin-right: 0;
+        margin-top: 30px;
+    }
+
+    .logos {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .logos img {
+        max-width: 80px;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .cta-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .news-item-right {
+        max-width: 100%;
+    }
+}
