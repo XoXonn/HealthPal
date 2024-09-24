@@ -141,6 +141,9 @@ nav {
     color: #003366;
 }
 
+.card a{
+    text-decoration: none;
+}
 
 .card:nth-child(1):hover {
     background: linear-gradient(45deg, 
