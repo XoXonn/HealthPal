@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    padding-top: 80px;
 }
 header h1 {
     font-size: 35px;
@@ -12,7 +13,7 @@ header h1 {
 
 }
 header.sticky-header {
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: rgba(244, 244, 244, 0.9);
     padding: 0px 80px;
@@ -230,6 +231,8 @@ nav {
 }
 
 
+
+
 /*SERVICES*/ 
 .onlineservice{
     padding-top: 70px;
@@ -399,9 +402,41 @@ nav {
 
 /* MOBILE */
 
+/* Responsive navigation */
 @media (max-width: 768px) {
     #nav-links {
-        display: none;
+        display: none; /* Hide on small screens */
+    }
+    
+    /* Add a hamburger menu for mobile */
+    .mobile-menu-icon {
+        display: block;
+        font-size: 24px;
+    }
+}
+
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .cta-button {
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 }
 
