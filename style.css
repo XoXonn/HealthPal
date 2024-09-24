@@ -137,9 +137,19 @@ nav {
 
 
 /*LATEST NEWS*/
+.news-container a{
+    text-decoration: none;
+}
+
+.news-container img{
+    box-shadow: 8px 8px 16px #cdd1d6, -8px -8px 16px #ffffff;
+}
 
 .news-section {
-    padding: 200px 80px;
+    margin-top: 100px;
+    padding: 100px 80px;
+    background: linear-gradient(to bottom, rgba(240, 248, 255, 0.5), rgba(211, 211, 211, 0.511));
+
 }
 
 .section-title {
@@ -223,6 +233,7 @@ nav {
 /*SERVICES*/ 
 .onlineservice{
     padding-top: 70px;
+    box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
 }
 
 
@@ -313,6 +324,7 @@ nav {
     text-align: center;
     padding: 125px;
     background-color: #ffffff;
+
   }
   
   #testimonials h2 {
@@ -335,7 +347,7 @@ nav {
     padding: 30px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
   }
   
   .testimonial img {
