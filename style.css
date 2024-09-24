@@ -371,7 +371,6 @@ nav {
 
 /* ABOUT US */
 .about-us {
-    background-color: #ddd;
     height: 150px;
     width: auto;
 }
@@ -379,13 +378,13 @@ nav {
 .about-us h1{
     font-size: 40px;
     text-align: center;
-    color: #0077c2;
+    color: #003366;
     padding-top: 60px;
 }
 
 .contact {
     background-color: #003366;
-    height: 300px;
+    height: 260px;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -393,7 +392,7 @@ nav {
 .contact img{
     margin-left: 100px;
     margin-top: 100px;
-    width: 400px;
+    width: 300px;
     height: auto;
 }
 
@@ -430,7 +429,6 @@ nav {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: 1.5s;
     z-index: 2;
