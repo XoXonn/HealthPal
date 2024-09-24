@@ -368,34 +368,123 @@ nav {
   }
 
 
+
 /* ABOUT US */
-.contact{
-    background-color: #003366;
-    padding-top: 125px;
+.about-us {
+    background-color: #ddd;
+    height: 150px;
+    width: auto;
 }
 
-
-.logo-contact {
-
-    text-align: center;
+.about-us h1{
     font-size: 40px;
-    font-weight: bold;
+    text-align: center;
+    color: #0077c2;
+    padding-top: 60px;
+}
+
+.contact {
+    background-color: #003366;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.contact img{
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 400px;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #0D87CB;
     color: #ffffff;
-    text-shadow: 0 0 2px rgb(0, 0, 0);
-
+    padding: 20px 0;
 }
 
-.logo-icon-contact {
-    color: #ff0000;
-    margin-right: 5px;
-    font-size: 50px;
-
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.logo-under{
-    background-color: rgb(50, 128, 197);
-    padding-bottom: 5px;
+.privacy-policy h3 {
+    font-size: 16px;
+    margin: 0;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+.social-icons::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.5s;
+    z-index: 2;
+}
+
+.social-icons i {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.social-icons a{
+    position: relative;
+    display: inline flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.social-icons a:hover{
+    color: #003366;
+}
+
+.social-icons a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #003366;
+    z-index: -1;
+    transition: .5s;
+}
+
+.social-icons a:hover::before{
+    width: 100%;
+}
+
+@keyframes showRight{
+    100% {
+        width: 0;
+    }
+}
+
 
 
 
@@ -476,136 +565,3 @@ nav {
     animation-range: entry 0% cover 40%;
 }
 
-
-
-/* Existing styles remain the same */
-
-/* Add these media queries at the end of your CSS file */
-
-@media (max-width: 768px) {
-    body {
-        padding-top: 60px;
-    }
-
-    header.sticky-header {
-        padding: 10px 20px;
-    }
-
-    .logo img {
-        width: 80%;
-    }
-
-    nav {
-        padding-right: 0;
-    }
-
-    #nav-links {
-        display: none;
-    }
-
-    .mobile-menu-icon {
-        display: block;
-        font-size: 24px;
-        cursor: pointer;
-    }
-
-    .hero {
-        padding: 40px 5%;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .news-section {
-        padding: 50px 20px;
-    }
-
-    .mainright {
-        flex-direction: column;
-    }
-
-    .main {
-        flex-direction: column;
-        border-right: none;
-        padding-right: 0;
-    }
-
-    .news-item-main {
-        max-width: 100%;
-    }
-
-    .news-item-main img {
-        width: 100%;
-    }
-
-    .right {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .news-item-right {
-        max-width: 48%;
-        margin-left: 0;
-    }
-
-    .side {
-        margin-top: 20px;
-    }
-
-    .news-item-side {
-        margin-left: 0;
-    }
-
-    .news-item-side img {
-        width: 30%;
-    }
-
-    .coba1 {
-        flex-direction: column;
-    }
-
-    .text-content {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .image-content {
-        margin-right: 0;
-        margin-top: 30px;
-    }
-
-    .logos {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .logos img {
-        max-width: 80px;
-    }
-
-    .testimonial-container {
-        flex-direction: column;
-    }
-
-    .testimonial {
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 24px;
-    }
-
-    .cta-button {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
-    .news-item-right {
-        max-width: 100%;
-    }
-}
