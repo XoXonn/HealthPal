@@ -275,20 +275,37 @@ nav {
     color: #F24E1E;
 }
 
-.appointment-btn {
+.appointment-btn{
     display: inline-block;
-    padding: 12px 25px;
     background-color: #F24E1E;
     color: #fff;
+    padding: 12px 25px;
+    border: none;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-size: 18px;
+    border-radius: 100px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    -webkit-border-radius:100px;
+    -moz-border-radius:100px;
+    -ms-border-radius:100px;
+    -o-border-radius: 100px;
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all.3s;
+    -o-transition: all .3s;
 }
 
-.appointment-btn:hover {
-    background-color: #F24E1E;
+.appointment-btn:hover{
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03) ;
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    box-shadow: 10px 12px 15px rgba(0, 0, 0, 3);
 }
+
 
 .image-content {
     max-width: 500px;
@@ -562,4 +579,3 @@ nav {
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
-
